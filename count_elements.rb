@@ -1,7 +1,9 @@
 def count_elements(array)
-  new_hash = {}
-  count = 
-  
-  new_hash
+  counts = Hash.new 0
+
+words.each do |word|
+  counts[word] += 1
+end
+
 end
  
