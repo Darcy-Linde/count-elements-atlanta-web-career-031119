@@ -1,8 +1,5 @@
 def count_elements(array)
-  counts = Hash.new 0
-
-array.each do |item|
-  counts[item] += 1
+  array.each_with_object(Hash.new(0)) { |word,counts| counts[word] += 1 }
 end
 
 end
